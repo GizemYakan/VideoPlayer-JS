@@ -1,0 +1,61 @@
+body {
+	background-color: #fff !important;
+}
+h1 {
+	text-align: center;
+	padding: 25px;
+}
+#videoContainer {
+	max-width:720px;
+	max-height:auto;
+	margin:auto;
+	padding:24px;
+	background-color: #f0f0f0;
+}
+video {
+	width:100%;
+}
+#video-controls {
+	height:64px;
+	margin-top: 10px !important;
+}
+#video-controls button {
+	float: left;
+}
+#video-controls .progress {
+	float: right;
+	margin-top: 15px !important;
+	margin-left: 10px !important;
+	cursor:pointer;
+	width: 90%;
+}
+#video-controls button {
+	border: none;
+	border-radius:25px;
+	width: 48px;
+	height: 48px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#video-controls button[data-state="play"] {
+	background-image: url('/assets/media/play.png');
+}
+#video-controls button[data-state="pause"] {
+	background-image: url('/assets/media/pause.png');
+}
+#video-controls progress {
+	width:100%;
+	border:none;
+	overflow:hidden;
+	border-radius:25px;
+	background-color:#f00;
+}
+/* Firefox için */
+#video-controls progress::-moz-progress-bar {
+	background-color:#f00;
+}
+/* Chrome veya Safari için */
+#video-controls progress::-webkit-progress-value {
+	background-color:#f00;
+}
